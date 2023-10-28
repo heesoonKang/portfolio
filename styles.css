@@ -1,0 +1,187 @@
+/* Reset & Basic Styling */
+html, body {
+    height: 100%;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    transition: color 0.3s;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #2C3E50;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 700;
+    color: #ECF0F1;
+}
+
+/* Intro Section */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticker-container {
+    width: 420px;
+    height: 380px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#bio {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+#bio .emoji {
+    font-size: 2rem;
+}
+
+#bio .description {
+    font-size: 1rem;
+}
+
+/* Main Content - Projects */
+#projects {
+    padding: 3rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2C3E50;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.project-card {
+    border: 1px solid #e5e5e5;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.timeline {
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background: #2C3E50;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* This will ensure the timeline stays on top */
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 15px;
+}
+
+.timeline a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 0.85rem; /* Adjust size as needed */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.timeline a:hover {
+    color: #3498db;
+    transform: scale(1.1); /* Slight growth effect on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* styles.css */
+a:hover {
+    color: #0077b6;  /* A shade of blue, you can adjust to your preference */
+}
+
+#contact {
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contact li {
+    margin: 0.5rem 0;
+}
+
+#contact a:hover {
+    color: #0077b5; /* This is LinkedIn blue, it makes sense for a hover effect. Adjust as you see fit. */
+}
+
+
