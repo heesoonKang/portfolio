@@ -1,1 +1,89 @@
-<h1>Hello!<\h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of your webpage that appears on the browser tab -->
+    <title>Henry's Projects</title>
+    
+    <!-- Linking to your external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Including Lottie animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
+</head>
+
+<body>
+    <!-- Header section for the website's main title -->
+    <header>
+        <h1>Henry's Projects</h1>
+    </header>
+
+    <!-- Introduction with the emoji sticker and your description -->
+    <section class="intro-container">
+        <!-- Your Lottie animation goes here -->
+        <div class="sticker-container" id="lottie-sticker"></div>
+        
+        <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('lottie-sticker'),
+              path: 'Animation - 1695237099057.json',
+              renderer: 'svg',
+              loop: true,
+              autoplay: true,
+            });
+        </script>
+
+        <div id="bio">
+            <p>Hi, I am Henry <span class="emoji">&#x1F44B;</span></p>
+            <p class="description">
+                Current student of University of California, San Diego who is deeply passionate about software development and always eager to create meaningful solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main content for projects -->
+    <main>
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <!-- Email Customization Project -->
+            <div class="project-card">
+                <img src="EmailCus.png" alt="Email Customization">
+                <h3>Email Customization</h3>
+                <p>Developed an automated Python tool leveraging the Gmail API to categorize and archive LinkedIn-based internship opportunities, streamlining email organization and enhancing job application efficiency.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch or learn more about my work, feel free to reach out:</p>
+        <ul>
+            <li>Phone: <a href="tel:4086181134">408 618 1134</a></li>
+            <li>Email: <span id="email">hek007@ucsd.edu</span></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/heesoon-kang-50324b25b" target="_blank" style="color: #0077b5;">Henry's LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/heesoonKang?tab=repositories" target="_blank" style="color: #0077b5;">Henry's GitHub</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer section for additional info or links -->
+    <footer>
+        <p>&copy; 2023 Henry. All rights reserved.</p>
+    </footer>
+
+    <!-- Unobfuscate email using JavaScript -->
+    <script>
+        document.getElementById("email").innerHTML = '<a href="mailto:' + 'hek007' + '@' + 'ucsd.edu' + '">' + 'hek007' + '@' + 'ucsd.edu' + '</a>';
+    </script>
+
+</body>
+</html>
